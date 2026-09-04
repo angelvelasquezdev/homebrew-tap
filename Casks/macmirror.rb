@@ -7,7 +7,7 @@ cask "macmirror" do
   desc "Native macOS Menu Bar app for mirroring Android notifications over local Wi-Fi"
   homepage "https://github.com/angelvelasquezdev/mac-mirror-macos"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "MacMirror.app"
 
