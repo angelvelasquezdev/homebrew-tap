@@ -21,6 +21,16 @@ brew install --cask macmirror
 | :--- | :--- | :--- |
 | [`macmirror`](Casks/macmirror.rb) | Native macOS Menu Bar app for mirroring Android notifications over local Wi-Fi | [angelvelasquezdev/mac-mirror-macos](https://github.com/angelvelasquezdev/mac-mirror-macos) |
 
+## 🛡️ First Launch on macOS (Gatekeeper)
+
+MacMirror is 100% open source and is not notarized with a paid Apple Developer certificate. If macOS blocks it on first launch:
+
+```bash
+xattr -cr /Applications/MacMirror.app
+```
+
+Alternatively, open **System Settings** → **Privacy & Security**, scroll to the **Security** section, and click **Open Anyway** next to the MacMirror alert.
+
 ## 🔄 Updates
 
 Homebrew will automatically keep MacMirror up to date when you run:
@@ -29,3 +39,4 @@ Homebrew will automatically keep MacMirror up to date when you run:
 brew update
 brew upgrade --cask macmirror
 ```
+

@@ -18,9 +18,10 @@ cask "macmirror" do
 
   caveats <<~EOS
     MacMirror is open source and not notarized with a paid Apple Developer certificate.
-    If macOS blocks it from opening, run:
+    To allow macOS to open it, run:
       xattr -cr /Applications/MacMirror.app
 
-    Or right-click MacMirror.app in Finder and select "Open".
+    Alternatively, go to System Settings -> Privacy & Security, scroll down,
+    and click "Open Anyway" next to the MacMirror prompt.
   EOS
 end
