@@ -15,4 +15,15 @@ cask "macmirror" do
     "~/Library/Application Support/MacMirror",
     "~/Library/Preferences/com.angelsoft.MacMirrorApp.plist",
   ]
+
+  caveats <<~EOS
+    MacMirror is open source and not notarized with a paid Apple Developer certificate.
+    If macOS blocks it from opening, run:
+      xattr -d com.apple.quarantine /Applications/MacMirror.app
+
+    Or install using:
+      brew install --cask --no-quarantine angelvelasquezdev/tap/macmirror
+
+    You can also right-click MacMirror.app in Finder and select "Open".
+  EOS
 end
