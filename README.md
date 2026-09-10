@@ -4,22 +4,33 @@ Official Homebrew Tap for **MacMirror** and utilities by [Ángel Velásquez](htt
 
 ## 🚀 How do I install these formulae / casks?
 
-### Quick Install (One Command)
+### Stable Release (Recommended)
 ```bash
 brew install --cask angelvelasquezdev/tap/macmirror
+```
+
+### Beta Channel (Pre-releases)
+```bash
+brew install --cask angelvelasquezdev/tap/macmirror-beta
 ```
 
 ### Or Tap first, then install
 ```bash
 brew tap angelvelasquezdev/tap
+
+# Stable:
 brew install --cask macmirror
+
+# Or Beta:
+brew install --cask macmirror-beta
 ```
 
 ## 📦 Available Casks
 
-| Cask | Description | Upstream |
-| :--- | :--- | :--- |
-| [`macmirror`](Casks/macmirror.rb) | Native macOS Menu Bar app for mirroring Android notifications over local Wi-Fi | [angelvelasquezdev/mac-mirror-macos](https://github.com/angelvelasquezdev/mac-mirror-macos) |
+| Cask | Description | Channel | Upstream |
+| :--- | :--- | :--- | :--- |
+| [`macmirror`](Casks/macmirror.rb) | Native macOS Menu Bar app for mirroring Android notifications over local Wi-Fi | Stable | [angelvelasquezdev/mac-mirror-macos](https://github.com/angelvelasquezdev/mac-mirror-macos) |
+| [`macmirror-beta`](Casks/macmirror-beta.rb) | Native macOS Menu Bar app for mirroring Android notifications over local Wi-Fi | Beta | [angelvelasquezdev/mac-mirror-macos](https://github.com/angelvelasquezdev/mac-mirror-macos) |
 
 ## 🛡️ First Launch on macOS (Gatekeeper)
 
@@ -37,6 +48,6 @@ Homebrew will automatically keep MacMirror up to date when you run:
 
 ```bash
 brew update
-brew upgrade --cask macmirror
+brew upgrade --cask macmirror       # For stable channel
+brew upgrade --cask macmirror-beta  # For beta channel
 ```
-

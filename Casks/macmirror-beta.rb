@@ -1,13 +1,13 @@
-cask "macmirror" do
+cask "macmirror-beta" do
   version "1.0.0-beta.2"
   sha256 "9b8ca61fa78b96311675f8e08ac4252792c9595152f8ef02968658d1287f661a"
 
   url "https://github.com/angelvelasquezdev/mac-mirror-macos/releases/download/v#{version}/MacMirror-v#{version}.dmg"
-  name "MacMirror"
-  desc "Native macOS Menu Bar app for mirroring Android notifications over local Wi-Fi"
+  name "MacMirror Beta"
+  desc "Native macOS Menu Bar app for mirroring Android notifications over local Wi-Fi (Beta channel)"
   homepage "https://github.com/angelvelasquezdev/mac-mirror-macos"
 
-  conflicts_with cask: "macmirror-beta"
+  conflicts_with cask: "macmirror"
   depends_on macos: :sonoma
 
   app "MacMirror.app"
