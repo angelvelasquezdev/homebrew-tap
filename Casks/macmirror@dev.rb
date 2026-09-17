@@ -1,16 +1,20 @@
-cask "macmirror-beta" do
-  version "1.0.0-beta.4"
-  sha256 "618aab13a642caf841881d56b159790b234a34266bb36d97b52083a4f08d1427"
+cask "macmirror@dev" do
+  version "dev.20260917.d2a8497"
+  sha256 "08836a2dd278a34329355414395f04529d03a0b4f765b9b41438af3952829be5"
 
-  url "https://github.com/angelvelasquezdev/mac-mirror-macos/releases/download/v#{version}/MacMirror-v#{version}.dmg"
-  name "MacMirror Beta"
-  desc "Native macOS Menu Bar app for mirroring Android notifications over local Wi-Fi (Beta channel)"
+  url "https://github.com/angelvelasquezdev/mac-mirror-macos/releases/download/dev/MacMirror-dev.dmg"
+  name "MacMirror (Dev)"
+  desc "Native macOS Menu Bar app for mirroring Android notifications (Development Channel)"
   homepage "https://github.com/angelvelasquezdev/mac-mirror-macos"
 
-  conflicts_with cask: "macmirror"
   depends_on macos: :sonoma
 
   app "MacMirror.app"
+
+  conflicts_with cask: [
+    "macmirror",
+    "macmirror@beta",
+  ]
 
   zap trash: [
     "~/Library/Application Support/MacMirror",
@@ -18,6 +22,7 @@ cask "macmirror-beta" do
   ]
 
   caveats <<~EOS
+    You are using the Development (bleeding-edge) channel of MacMirror.
     MacMirror is open source and not notarized with a paid Apple Developer certificate.
     To allow macOS to open it, run:
       xattr -cr /Applications/MacMirror.app
