@@ -1,6 +1,6 @@
 cask "macmirror@dev" do
-  version "dev.202609252143.ab95840"
-  sha256 "4c3b1bed0a5507e5372096275a6a97332d01f46502f952f7087aff87900a17cc"
+  version "dev.202609252227.40e7b3a"
+  sha256 "17b015b40b29f31079b96b680ee62cfce9d5517235a10d0e489f770639b3b0a6"
 
   url "https://github.com/angelvelasquezdev/mac-mirror-macos/releases/download/dev/MacMirror-dev.dmg"
   name "MacMirror (Dev)"
