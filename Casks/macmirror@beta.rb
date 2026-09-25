@@ -1,6 +1,6 @@
 cask "macmirror@beta" do
-  version "1.1.0-beta.2"
-  sha256 "5cb896047bf335acd176a061dd10990ed926e39202d47729d362c444917c3b1e"
+  version "1.1.0-beta.3"
+  sha256 "f33aae4419870d8d478828e3e1997e62508b10beef5a07f3783a72bd016fb238"
 
   url "https://github.com/angelvelasquezdev/mac-mirror-macos/releases/download/v#{version}/MacMirror-v#{version}.dmg"
   name "MacMirror (Beta)"
